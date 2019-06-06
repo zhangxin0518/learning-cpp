@@ -11,7 +11,7 @@ int main(int argc, char **argv)
   outfile.open("c:/users/zhangxin/Desktop/" + file1, std::ofstream::out | std::ofstream::app );
   //打开文件成功与否判断
   if( outfile.is_open() ){
-    std:cout<< "open file successfully."<< std::endl;
+    std::cout<< "open file successfully."<< std::endl;
   }else{
     std::cout<< "open file failed."<< std::endl;
   }
