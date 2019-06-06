@@ -17,9 +17,12 @@ int main(int argc, char **argv)
   }
   //文件读取操作
   std::string ss;
-  while( !infile.eof() )
+  while( 1 )
   {
     infile >> ss;
+    if( infile.eof() ){
+      break;
+    }
     std::cout<< ss<< std::endl;
   }
   //关闭文件
