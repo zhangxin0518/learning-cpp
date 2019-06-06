@@ -19,7 +19,8 @@ int main(int argc, char **argv)
   std::string ss;
   while( 1 )
   {
-    infile >> ss;
+    //infile >> ss;           //按空格读取
+    std::getline(infile, ss); //按行读取
     if( infile.eof() ){
       break;
     }
